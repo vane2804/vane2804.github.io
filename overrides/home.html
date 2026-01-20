@@ -1,0 +1,58 @@
+{% extends "main.html" %}
+
+{% block fonts %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+{% endblock %}
+
+{% block header %}
+<div data-md-component="header"></div>
+{% endblock %}
+
+{% block site_nav %}{% endblock %}
+
+{% block tabs %}
+{{ super() }}
+
+<section class="mdx-container">
+
+    <div id="spotlight" class="animated fadeIn">
+
+        <div id="home-center">
+            <h1 id="home-title">Vanessa Vargas Arteaga</h1>
+            <p id="home-subtitle">DevOps Engineer</p>
+            <nav id="home-nav" class="site-nav">
+
+                <ul>
+                    <li><a href="https://docs.google.com/document/d/1SRTaPXAc6NUo-VPnO3lIFo7PjKObj3oD3kSOgH5lhhc/edit?usp=sharing"
+                            target="_blank">Resume</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="https://www.linkedin.com/in/vanessa-vargas-678251140" target="_blank">LinkedIn</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+    </div>
+
+    <main id="page-content" class="site-main section-inner thin animated fadeIn">
+        <div class="content">
+
+            <p>
+                I'm a DevOps engineer who loves turning manual work into automated solutions. Over 6+ years, I've gone from QA automation to architecting CI/CD pipelines.
+            </p>
+            <p>
+                I work primarily in AWS, using infrastructure as code to create resilient environments and scripts that eliminate the tedious tasks.
+            </p>
+            <p>
+                Learning new things excites me. I got my AWS Solutions Architect cert just for fun. Well, that and to level up my cloud game.
+            </p>
+        </div>
+
+    </main>
+</section>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
